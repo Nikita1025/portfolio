@@ -1,0 +1,26 @@
+.contactsBlock {
+    min-height: 70vh;
+    background-color: darkgray;
+}
+
+.contactsContainer {
+    justify-content: flex-end;
+
+}
+
+.title {
+    background-color: blanchedalmond;
+}
+
+.formContainer {
+    width: 290px;
+    height: 150px;
+    border: 1px solid violet;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.linkSend{
+    padding: 8px 25px;
+}

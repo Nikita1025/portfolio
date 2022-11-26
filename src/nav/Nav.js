@@ -1,12 +1,17 @@
 import React from "react";
 import  s from './Nav.module.css';
 
-function Nav() {
+export const Nav=()=> {
     return (
-        <div className={s.header}>
+        <div className={s.nav}>
+                <a href=''>Home</a>
+                <a href=''>Skills</a>
+                <a href=''>My project</a>
+                <a href=''>Contact</a>
+
 
         </div>
     );
 }
 
-export default Nav;
+

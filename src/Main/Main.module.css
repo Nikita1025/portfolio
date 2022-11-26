@@ -1,0 +1,22 @@
+.mainBlock{
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo{
+    width: 290px;
+    height: 400px;
+    background-color: aqua;
+}
+.text {
+    width: 290px;
+    background-color: gold;
+    margin-top: 0;
+}
+.mainContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}

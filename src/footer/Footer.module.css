@@ -1,0 +1,22 @@
+.footerBlock{
+    min-height: 20vh;
+    background-color: darkolivegreen;
+}
+.footerContainer{
+    justify-content: flex-end;
+}
+.title {
+    background-color: blueviolet;
+}
+.footerIcon{
+    width: 290px;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.Icon{
+    width: 30px;
+    height: 30px;
+    background-color: blueviolet;
+}

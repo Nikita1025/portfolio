@@ -1,6 +1,17 @@
 .projectBlock{
-    min-width: 100vh;
+    min-height: 100vh;
+    background-color: darkgoldenrod;
 }
 .projectContainer{
-
+    justify-content: flex-start;
+}
+.title{
+    background-color: darkcyan;
+}
+.projects{
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
