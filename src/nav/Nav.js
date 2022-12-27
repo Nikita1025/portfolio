@@ -1,15 +1,28 @@
-import React from "react";
-import  s from './Nav.module.css';
+import React, {useEffect, useRef, useState} from "react";
+import s from './Nav.module.scss';
 
-export const Nav=()=> {
+export const Nav = () => {
+    const [_, setIsBlackText] = useState({})
+
+    useEffect(()=>{
+        const getScroll = () => {
+            setIsBlackText({})
+        }
+
+        window.addEventListener('scroll', getScroll)
+        return () => window.removeEventListener('scroll', getScroll)
+    },[window.scrollY])
+
+    const linkStyle = `${s.href} ${window.scrollY >= 200 ? s.black : s.white}`
+
     return (
-        <div className={s.nav}>
-                <a href=''>Home</a>
-                <a href=''>Skills</a>
-                <a href=''>My project</a>
-                <a href=''>Contact</a>
-
-
+        <div className={s.navCont}>
+            <div className={s.nav}>
+                <a className={linkStyle} href=''>Home</a>
+                <a className={linkStyle} href=''>Skills</a>
+                <a className={linkStyle} href=''>My project</a>
+                <a className={linkStyle} href=''>Contact</a>
+            </div>
         </div>
     );
 }

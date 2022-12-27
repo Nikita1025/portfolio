@@ -1,14 +1,21 @@
 import React from "react";
-import  s from './Project.module.css';
+import s from './Project.module.scss';
 
-export const Project=(props)=> {
+export const Project = (props) => {
     return (
         <div className={s.works}>
-            <div className={s.imageContainer}>
-                <a className={s.link}>Open</a>
+
+            <div style={props.style} className={s.imageContainer}>
+                <a className={s.link}>
+                    <img src={props.image}/>
+                </a>
             </div>
-            <div className={s.nameProject}> {props.nameProject}</div>
-            <span className={s.coment}>{props.coment}</span>
+            <h4 className={s.h4}>
+                <a className={s.nameProject}> {props.nameProject}</a>
+            </h4>
+            <p className={s.coment}>{props.coment}</p>
+
+            <a className={s.btn}>Read more</a>
         </div>
     );
 }

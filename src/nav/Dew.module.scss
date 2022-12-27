@@ -1,0 +1,30 @@
+@import "src/common/styles/sass/variables";
+.DewCont{
+    position: relative;
+    min-height: 1px;
+    float: left;
+    width: 25%;
+    color: #333;
+}
+.logo{
+    transition: all 0.3s ease-out;
+    line-height: 26px;
+    font-size: 14px;
+}
+.href{
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    padding: 25px 0;
+    background-color: transparent;
+}
+.black{
+    color: $titleColor;
+}
+.white{
+    color: $bgColor;
+}

@@ -1,0 +1,88 @@
+@import "src/common/styles/sass/variables";
+
+.mainBlock {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  background-image: url("https://vavelo-dew.netlify.app/assets/img/bg.jpg");
+  position: relative;
+  &:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    text-align: center;
+    top: 50%;
+
+    .photo {
+      opacity: 1;
+      transform: translate(0);
+
+      .image {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        margin: 0 auto;
+        vertical-align: middle;
+        text-align: center;
+        @media screen and (min-width: 766px) and (max-width: 1024px) {
+          width: 100px;
+          height: 100px;
+        }
+        @media screen and (min-width: 300px) and (max-width: 640px) {
+          padding: 0;
+          margin: 0 0 16px 0;
+        }
+      }
+    }
+
+    .text h1 {
+      color: $bgColor;
+      font-size: 4em;
+      line-height: 80px;
+      font-family: $titleFontFamily;
+      margin: 30px 0 0;
+      padding: 0;
+      text-align: center;
+      font-weight: 500;
+      @media screen and (min-width: 766px) and (max-width: 1024px) {
+        font-size: 2.6em;
+        line-height: 50px;
+        margin-top: 20px;
+      }
+      @media screen and (min-width: 300px) and (max-width: 640px) {
+        font-size: 2.2em;
+        font-weight: 500;
+        line-height: 60px;
+      }
+    }
+
+    .text h3 {
+      font-family: $textFontFamily;
+      color: rgba(255, 255, 255, 0.66);
+      letter-spacing: 2px;
+      font-weight: 500;
+      line-height: 1.1;
+      font-size: 24px;
+      text-align: center;
+      margin: 0;
+    }
+
+  }
+
+}
+
+
+
+

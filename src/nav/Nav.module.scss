@@ -1,0 +1,40 @@
+@import "src/common/styles/sass/variables";
+
+.navCont{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+.nav{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    float: right!important;
+    margin-right: -15px;
+    font-family: 'Lato', sans-serif;
+    line-height: 26px;
+    font-size: 14px;
+    color: #333;
+}
+.href{
+    padding: 30px 11px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 18.15px;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    text-decoration: none;
+}
+.black{
+    color: $titleColor;
+}
+
+.white{
+    color: $bgColor;
+}

@@ -1,0 +1,64 @@
+@import "src/common/styles/sass/variables";
+
+.skillsCont {
+  width: 43.66666667%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-family: $textFontFamily;
+  line-height: 26px;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+
+  .progressBox {
+    margin-bottom: 50px;
+    font-size: 14px;
+    color: $color;
+
+    .p {
+      font-weight: 600;
+      font-size: 16px;
+      display: flex;
+      color: $textColor;
+      justify-content: space-between;
+
+      .spanSetting {
+        color: $titleColor !important;
+        float: right !important;
+
+      }
+    }
+
+    .progress {
+      opacity: 1;
+      background-color: rgba(26, 26, 26, 0.31);
+      border-radius: 4px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      box-shadow: none;
+      height: 3px;
+
+      .progressBar {
+        transition-duration: 2000ms;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+        background: $primaryColor !important;
+        height: 100%;
+        font-size: 12px;
+        line-height: 20px;
+        color: $bgColor;
+        text-align: center;
+        float: left;
+        box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+        transition: width .6s ease;
+      }
+    }
+  }
+}
+
+
+
+
