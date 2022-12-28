@@ -8,16 +8,16 @@ import {Contacts} from "./contacts/Contacts";
 import {Footer} from "./footer/Footer";
 
 function App() {
-  return (
-    <div className="App">
-        <Header/>
-        <Main/>
-        <Skills/>
-        <Projects/>
-        <Contacts/>
-        <Footer/>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Header/>
+            <Main/>
+            <Skills/>
+            <Projects/>
+            <Contacts/>
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;

@@ -8,20 +8,17 @@ import networkImage from '../assets/image/socialNetwork.jpg'
 import counter from '../assets/image/counter.jpg'
 
 export const Projects = () => {
-    // const Todolist = {
-    //     backgroundImage: `url (${todoImage})`
-    // }
-    // const SocialNetwork ={
-    //     backgroundImage: `url (${networkImage})`
-    // }
     return (
         <div className={s.projectBlock}>
             <div className={`${cont.container} ${s.projectContainer}`}>
-               <Title text={"My works"}/>
+                <Title text={"My works"}/>
                 <div className={s.projects}>
-                    <Project image={todoImage} nameProject={"Todolist"} coment={"Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."}/>
-                    <Project image={networkImage} nameProject={"Social Network"} coment={"Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."}/>
-                    <Project image={counter} nameProject={"Counter"} coment={"Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."}/>
+                    <Project image={todoImage} nameProject={"Todolist"}
+                             coment={"Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."}/>
+                    <Project image={networkImage} nameProject={"Social Network"}
+                             coment={"Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."}/>
+                    <Project image={counter} nameProject={"Counter"}
+                             coment={"Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."}/>
                 </div>
             </div>
         </div>

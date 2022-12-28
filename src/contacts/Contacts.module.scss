@@ -1,122 +1,130 @@
+@import "src/common/styles/sass/variables.scss";
+
 .contactsBlock {
   min-height: 50vh;
-  background: #f2f2f2;
-}
+  background: $whiteColor;
 
-.contactsContainer {
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-  padding: 95px 15px 95px;
-  @media screen and (max-width: 768px) {
-    width: 100%;
+  .contactsContainer {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding: 95px 15px 95px;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+
+    .iconContainer {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .formDiv {
+      width: 66.66666667%;
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      text-align: center;
+      font-family: $textFontFamily;
+      line-height: 26px;
+      color: $color;
+      font-size: 14px;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+
+      .linkSend {
+        margin-top: 15px;
+        background: $titleColor;
+        color: $bgColor;
+        border: none;
+        padding: 8px 25px;
+        text-transform: capitalize;
+        border-radius: 5px;
+        margin-right: 4px;
+        margin-bottom: 4px;
+        transition: 0.5s;
+        font-size: 16px;
+        display: inline-block;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        touch-action: manipulation;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      .formContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        margin-right: -15px;
+        margin-left: -15px;
+
+        .formGroup {
+          float: left;
+          display: flex;
+          @media screen and (max-width: 768px) {
+            flex-wrap: wrap;
+          }
+
+          .input {
+            display: block;
+            background-color: $bgColor;
+            color: $titleColor;
+            width: 100%;
+            padding: 6px 12px;
+            line-height: 1.42857143;
+            border: 0;
+            border-radius: 2px;
+            box-shadow: none;
+            font-size: 14px;
+            height: 34px;
+            margin-bottom: 10px;
+          }
+        }
+
+        .textareaGroup {
+          margin-bottom: 15px;
+
+          .textarea {
+            display: block;
+            background-color: $bgColor;
+            color: $titleColor;
+            width: 100%;
+            padding: 6px 12px;
+            line-height: 1.42857143;
+            background-image: none;
+            border: 0;
+            border-radius: 2px;
+            box-shadow: none;
+            transition: none;
+            font-size: 14px;
+            resize: none;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            height: auto;
+          }
+
+        }
+      }
+    }
   }
-
-
 }
 
 
-.title {
-  background-color: blanchedalmond;
-}
 
-.formDiv {
-  width: 66.66666667%;
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-  text-align: center;
-  font-family: 'Lato', sans-serif;
-  line-height: 26px;
-  color: #333;
-  font-size: 14px;
-  @media screen and (max-width: 768px) {
-    width: 100%;
-  }
-}
 
-.formContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  margin-right: -15px;
-  margin-left: -15px;
-}
 
-.linkSend {
-  margin-top: 15px;
-  background: #131313;
-  color: #fff;
-  border: none;
-  padding: 8px 25px;
-  text-transform: capitalize;
-  border-radius: 5px;
-  margin-right: 4px;
-  margin-bottom: 4px;
-  transition: 0.5s;
-  font-size: 16px;
-  display: inline-block;
-  font-weight: 400;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
-  user-select: none;
-}
 
-.formGroup {
-  float: left;
-  display: flex;
-  @media screen and (max-width: 768px){
-    flex-wrap: wrap;
-  }
-}
 
-.input {
-  display: block;
-  background-color: #fff;
-  color: #131313;
-  width: 100%;
-  padding: 6px 12px;
-  line-height: 1.42857143;
-  border: 0;
-  border-radius: 2px;
-  box-shadow: none;
-  font-size: 14px;
-  height: 34px;
-  margin-bottom: 10px;
-}
 
-.textareaGroup {
-  margin-bottom: 15px;
-}
 
-.textarea {
-  display: block;
-  background-color: #fff;
-  color: #131313;
-  width: 100%;
-  padding: 6px 12px;
-  line-height: 1.42857143;
-  background-image: none;
-  border: 0;
-  border-radius: 2px;
-  box-shadow: none;
-  transition: none;
-  font-size: 14px;
-  resize: none;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  height: auto;
-}
 
-.inconContainer {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+
+

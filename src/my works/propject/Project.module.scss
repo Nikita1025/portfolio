@@ -31,20 +31,8 @@
     @media screen and (max-width:768px ){
       height: 100%;
     }
-    //&::before {
-    //  position: absolute;
-    //  content: '';
-    //  background-color: $titleColor;
-    //  top: 0;
-    //  bottom: 0;
-    //  left: 0;
-    //  right: 0;
-    //  opacity: 0.4%;
-    //}
-
-
     .link {
-      font-family: 'Lato', sans-serif;
+      font-family: $textFontFamily;
       margin: 0;
       padding: 0;
       text-decoration: none;
@@ -64,7 +52,7 @@
 
     .nameProject {
       background-color: transparent;
-      font-family: 'Lato', sans-serif;
+      font-family: $textFontFamily;
       margin: 0;
       padding: 0;
       color: $titleColor;
@@ -73,7 +61,7 @@
   }
 
   .coment {
-    font-family: 'Lato', sans-serif;
+    font-family: $textFontFamily;
     margin: 0 0 15px;
     padding: 0;
     color: $textColor;

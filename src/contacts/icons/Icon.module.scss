@@ -1,0 +1,33 @@
+@import "src/common/styles/sass/variables.scss";
+.icon {
+  text-align: center;
+  font-family: $textFontFamily;
+  line-height: 26px;
+  font-size: 14px;
+  color: $color;
+  min-height: 1px;
+  padding-right: 40px;
+  padding-left: 40px;
+
+  p {
+    color: $titleColor;
+    margin: 0 0 30px;
+    font-size: 16px;
+  }
+
+  .envelope {
+    display: inline-block;
+    color: $titleColor;
+    font-size: 2em;
+    line-height: 45px;
+    margin-bottom: 10px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+
+    img {
+      width: 28px;
+      height: 28px;
+    }
+  }
+}
+

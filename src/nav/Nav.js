@@ -2,11 +2,11 @@ import React, {useEffect, useRef, useState} from "react";
 import s from './Nav.module.scss';
 
 export const Nav = () => {
-    const [_, setIsBlackText] = useState({})
+    const [_, setIsBlackTextNav] = useState({})
 
     useEffect(()=>{
         const getScroll = () => {
-            setIsBlackText({})
+            setIsBlackTextNav({})
         }
 
         window.addEventListener('scroll', getScroll)

@@ -1,5 +1,5 @@
 import React from "react";
-import s from './Footer.module.css';
+import s from './Footer.module.scss';
 import cont from '../common/styles/Container.module.css'
 import telegram from '../assets/image/telegram.svg'
 import likIn from '../assets/image/linkedin.svg'
@@ -9,12 +9,11 @@ export const Footer = () => {
     return (
         <div className={s.footerBlock}>
             <div className={`${cont.container} ${s.footerContainer}`}>
-
                 <div className={s.footerIcon}>
                     <ul className={s.socialIcon}>
                         <li>
                             <a href={''}>
-                                    <img src={telegram}/>
+                                <img src={telegram}/>
                             </a>
                         </li>
                         <li>

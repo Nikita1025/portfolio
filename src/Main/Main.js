@@ -1,9 +1,10 @@
 import React from 'react';
-import  s from './Main.module.scss';
-import  cont from '../common/styles/Container.module.css'
+import s from './Main.module.scss';
+import cont from '../common/styles/Container.module.css'
 import bg from "../assets/image/bg.jpg";
+
 export const Main = () => {
-    const MainBack ={
+    const MainBack = {
         backgroundImage: `url (${bg})`
     }
     return (

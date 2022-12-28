@@ -12,7 +12,7 @@ export const Contacts = () => {
         <div className={s.contactsBlock}>
             <div className={`${cont.container} ${s.contactsContainer}`}>
                 <Title text={'Contact Me'}/>
-                <div className={s.inconContainer}>
+                <div className={s.iconContainer}>
                     <Icon icon={mail} text={'nekit1025@mail.ru'}/>
                     <Icon icon={location} text={'Belarus, Minsk'}/>
                     <Icon icon={phone} text={'+375 33 340 78 83'}/>

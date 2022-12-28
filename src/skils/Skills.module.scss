@@ -1,7 +1,8 @@
+@import "src/common/styles/sass/variables.scss";
 .skillsBlock{
     min-height: 30vh;
     padding: 95px 0 50px;
-    background: #f2f2f2;
+    background: $whiteColor;
     .skillsContainer{
         justify-content: center;
         @media screen and (max-width: 768px){
