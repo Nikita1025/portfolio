@@ -6,7 +6,7 @@ export const Project = (props) => {
         <div className={s.works}>
 
             <div style={props.style} className={s.imageContainer}>
-                <a className={s.link}>
+                <a className={s.link} href={props.href}>
                     <img src={props.image}/>
                 </a>
             </div>
@@ -15,7 +15,7 @@ export const Project = (props) => {
             </h4>
             <p className={s.coment}>{props.coment}</p>
 
-            <a className={s.btn}>Read more</a>
+            <a className={s.btn} href={props.href}>Read more</a>
         </div>
     );
 }

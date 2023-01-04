@@ -40,7 +40,7 @@
     border-top: 1px solid transparent;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
     background: $bgColor;
-
+    transition: 3s;
     .ul {
       margin: 7.5px -15px;
       list-style: none;
