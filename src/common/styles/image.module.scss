@@ -1,0 +1,10 @@
+@import "src/common/styles/sass/variables";
+.image {
+  width: 20px;
+  height: 20px;
+  transition: 0.5s;
+  &:hover {
+    fill: $primaryColor;
+
+  }
+}
