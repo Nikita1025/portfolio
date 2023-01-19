@@ -1,8 +1,10 @@
 @import "src/common/styles/sass/variables.scss";
 
 .contactsBlock {
-  min-height: 50vh;
+  min-height: 90vh;
   background: $whiteColor;
+  display: flex;
+  align-items: center;
 
   .contactsContainer {
     margin-right: auto;

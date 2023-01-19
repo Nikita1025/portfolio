@@ -31,7 +31,7 @@ export const Footer = () => {
                                 </a>
                             </li>
                         </ul>
-                        <p className={s.p}>© 2022 Dew. made by vavelo</p>
+                        <p className={s.p}>© 2023 All rights reserved</p>
                     </div>
                 </Fade>
             </div>

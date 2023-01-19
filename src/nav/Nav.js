@@ -23,10 +23,10 @@ export const Nav = () => {
                       spy={true} smooth={true} offset={0} duration={500}
                 >Home</Link>
                 <Link className={linkStyle} activeClass={s.active} to="skills"
-                      spy={true} smooth={true} offset={50} duration={500}
+                      spy={true} smooth={true} offset={0} duration={500}
                 >Skills</Link>
                 <Link className={linkStyle} activeClass={s.active} to="projects"
-                      spy={true} smooth={true} offset={-70} duration={500}
+                      spy={true} smooth={true} offset={0} duration={500}
                 >My project</Link>
                 <Link className={linkStyle} activeClass={s.active} to="contacts"
                       spy={true} smooth={true} offset={0} duration={500}

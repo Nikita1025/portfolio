@@ -12,9 +12,9 @@ export const Skills = () => {
                 <Fade>
                     <Title text={'My Skills'}/>
                     <div className={s.skills}>
-                        <Skill title={"React"} percent={'87%'}/>
-                        <Skill title={"JS"} percent={'78%'}/>
-                        <Skill title={"Rest API"} percent={'70%'}/>
+                        <Skill title={"React"} percent={'95%'}/>
+                        <Skill title={"JS"} percent={'87%'}/>
+                        <Skill title={"Rest API"} percent={'90%'}/>
                         <Skill title={"Redux"} percent={'90%'}/>
                     </div>
                 </Fade>

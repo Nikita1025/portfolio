@@ -5,6 +5,8 @@
   display: flex;
   justify-content: space-between;
   background-image: url("https://vavelo-dew.netlify.app/assets/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   &:after{
     content: '';

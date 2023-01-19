@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import s from './Burger.module.scss'
+import {Link} from "react-scroll";
 
 const Burger = () => {
     const [burger, setBurger] = useState(false)
@@ -26,10 +27,18 @@ const Burger = () => {
             </button>
             {burger === true && <div className={s.navBar}>
                 <ul className={s.ul}>
-                    <li className={s.li}><a className={s.href} href=''>Home</a></li>
-                    <li className={s.li}><a className={s.href} href=''>Skills</a></li>
-                    <li className={s.li}><a className={s.href} href=''>My project</a></li>
-                    <li className={s.li}><a className={s.href} href=''>Contact</a></li>
+                    <Link className={s.href}  activeClass={s.active} to="home"
+                          spy={true} smooth={true} offset={0} duration={500}
+                    >Home</Link>
+                    <Link className={s.href}  activeClass={s.active} to="skills"
+                          spy={true} smooth={true} offset={0} duration={500}
+                    >Skills</Link>
+                    <Link className={s.href}  activeClass={s.active} to="projects"
+                          spy={true} smooth={true} offset={0} duration={500}
+                    >My project</Link>
+                    <Link className={s.href}  activeClass={s.active} to="contacts"
+                          spy={true} smooth={true} offset={0} duration={500}
+                    >Contacts</Link>
                 </ul>
             </div>}
         </div>
