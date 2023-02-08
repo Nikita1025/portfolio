@@ -17,7 +17,7 @@ export const Projects = () => {
                     <div className={s.projects}>
                         <Project image={todoImage} nameProject={"Todolist"}
                                  coment={"Stack:TypeScript, CSS, React, Redux, Redux-thunk, Axios, Formik, Material UI, Jest(Unit-Tests), React-router-dom v6"}
-                                 href={'https://nikita1025.github.io/SocialNetwork/'}
+                                 href={'https://nikita1025.github.io/TodoList/'}
                         />
                         <Project image={networkImage} nameProject={"Social Network"}
                                  href={'https://nikita1025.github.io/SocialNetwork/'}

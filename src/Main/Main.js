@@ -4,6 +4,7 @@ import cont from '../common/styles/Container.module.css'
 import bg from "../assets/image/bg.jpg";
 import Fade from 'react-reveal/Fade';
 import ReactTypingEffect from 'react-typing-effect';
+import me from '../assets/image/me.jpg'
 export const Main = () => {
     const MainBack = {
         backgroundImage: `url (${bg})`
@@ -16,7 +17,7 @@ export const Main = () => {
                 <Fade top>
                     <div>
                         <div className={s.photo}>
-                            <img className={s.image} src={'https://vavelo-dew.netlify.app/assets/img/me.jpg'}/>
+                            <img className={s.image} src={me}/>
                         </div>
                         <div className={s.text}>
                             <h1>Hi, I'm Nikita Loika</h1>
