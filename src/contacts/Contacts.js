@@ -9,11 +9,14 @@ import location from '../assets/image/logation.svg'
 import Fade from 'react-reveal/Fade';
 import * as emailjs from "@emailjs/browser";
 import {useForm} from "react-hook-form";
-import {LinearProgress} from "@mui/material";
-
+import {Alert, LinearProgress, Snackbar} from "@mui/material";
+import Stack from '@mui/material/Stack';
 export const Contacts = () => {
 
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(false)
+
+
+
     const form = useRef();
     const {
         register,
@@ -38,6 +41,7 @@ export const Contacts = () => {
     return (
         <div id='contacts' className={s.contactsBlock}>
             <div className={`${cont.container} ${s.contactsContainer}`}>
+
                 <Fade>
                     <Title text={'Contact Me'}/>
                     <div className={s.iconContainer}>
@@ -82,6 +86,9 @@ export const Contacts = () => {
                                     {errors?.project && <span>{errors?.project.message || "Error"}</span>}
                                 </div>
                             </div>
+                            {loading &&<Stack  sx={{ width: '200px' }} st spacing={2}>
+                                <Alert  variant="filled" severity="success">Message sent</Alert>
+                            </Stack>}
                             <div className={s.bntCont}>
                                 <button  type="submit" onSubmit={onSubmit} className={s.linkSend}>Send Message</button>
                             </div>
@@ -89,9 +96,11 @@ export const Contacts = () => {
                         </form>
                     </div>
                 </Fade>
+
             </div>
-            {loading &&<LinearProgress color="success" />}
+
         </div>
+
     )
 }
 
