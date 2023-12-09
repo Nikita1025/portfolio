@@ -13,9 +13,11 @@ export const Skills = () => {
                     <Title text={'My Skills'}/>
                     <div className={s.skills}>
                         <Skill title={"React"} percent={'95%'}/>
-                        <Skill title={"JS"} percent={'87%'}/>
-                        <Skill title={"Rest API"} percent={'90%'}/>
-                        <Skill title={"Redux"} percent={'90%'}/>
+                        <Skill title={"JS/TS"} percent={'87%'}/>
+                        <Skill title={"Next js"} percent={'80%'}/>
+                        <Skill title={"Redux/Redux-toolkit"} percent={'95%'}/>
+                        <Skill title={"RTK-Query/React-Query"} percent={'75%'}/>
+                        <Skill title={"REST API"} percent={'88%'}/>
                     </div>
                 </Fade>
             </div>

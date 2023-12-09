@@ -5,6 +5,7 @@ import {Project} from "./propject/Project";
 import {Title} from "../common/components/Title";
 import todoImage from '../assets/image/todolist.jpg'
 import networkImage from '../assets/image/socialNetwork.jpg'
+import shopImage from '../assets/image/9a94b21af129a19e314633a9fe11475e.jpg'
 import cards from '../assets/image/cards.jpg'
 import Fade from 'react-reveal/Fade';
 
@@ -15,16 +16,16 @@ export const Projects = () => {
                 <Fade>
                     <Title text={"My works"}/>
                     <div className={s.projects}>
-                        <Project image={todoImage} nameProject={"Todolist"}
-                                 coment={"Stack:TypeScript, CSS, React, Redux, Redux-thunk, Axios, Formik, Material UI, Jest(Unit-Tests), React-router-dom v6"}
-                                 href={'https://nikita1025.github.io/TodoList/'}
+                        <Project image={networkImage} nameProject={"Instagram analogue"}
+                                 coment={'Stack:TypeScript, Next.js, RTK-Query, Redux Toolkit, React Hook Form, Storybook, SSR, OAuth2.0'}
+                                 href={'https://product-app-mu.vercel.app/'}
                         />
-                        <Project image={networkImage} nameProject={"Social Network"}
-                                 href={'https://nikita1025.github.io/SocialNetwork/'}
-                                 coment={"Stack:TypeScript, CSS, React, Redux, Redux-thunk, Axios, Formik, Yup, Reselect, Material UI, Organizing correct app architecture"}/>
+                        <Project image={shopImage} nameProject={"Abra"}
+                                 href={'https://dev.abra-market.com/'}
+                                 coment={"Stack:TypeScript, SCSS, React, Redux-toolkit, Axios, React-hook-form, React-Router-Dom,Yup, Docker"}/>
                         <Project image={cards}  nameProject={"Traning cards"}
                                  href={'https://tkachiko.github.io/flashcards'}
-                                 coment={"Stack: TypeScript, SCSS, React, Redux-toolkit, Axios, Material UI, Formik,Git, GitHub, Team development"}/>
+                                 coment={"Stack: TypeScript, SCSS, React, Redux-toolkit, Axios, Material UI, Formik, Git, yup, Team development"}/>
                     </div>
                 </Fade>
             </div>
