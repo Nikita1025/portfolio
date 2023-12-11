@@ -18,7 +18,7 @@ export const Projects = () => {
                     <div className={s.projects}>
                         <Project image={networkImage} nameProject={"Instagram analogue"}
                                  coment={'Stack:TypeScript, Next.js, RTK-Query, Redux Toolkit, React Hook Form, Storybook, SSR, OAuth2.0'}
-                                 href={'https://product-app-mu.vercel.app/'}
+                                 href={'https://inctagram.space/'}
                         />
                         <Project image={shopImage} nameProject={"Abra"}
                                  href={'https://dev.abra-market.com/'}
